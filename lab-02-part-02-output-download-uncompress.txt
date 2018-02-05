@@ -18,6 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
+hello
 
 
 
@@ -29,7 +30,7 @@ $ echo hello there
 Copy and paste the output below.
 ----------
 
-
+hello there
 
 ==========
 3. Type:
@@ -39,7 +40,7 @@ $ echo good mornin'
 Copy and paste the output below.
 ----------
 
-
+> 
 
 ==========
 4. Uh-oh... we're stuck!
@@ -47,7 +48,7 @@ Copy and paste the output below.
 Type [CTRL + C] to get your prompt back.
 ----------
 
-
+ent-v314-002:Users student$ 
 
 ==========
 5. Say good mornin' again with quotes!
@@ -57,6 +58,7 @@ $ echo "good mornin'"
 Copy and paste the output below.
 ----------
 
+good mornin'
 
 
 ==========
@@ -66,7 +68,7 @@ $ echo *
 
 What happens?
 ----------
-
+This message pops up. Shared entadmin professor student
 
 
 ==========
@@ -74,7 +76,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+clear <ENTER>
 
 
 ==========
@@ -87,7 +89,12 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,7 +104,10 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
+ent-v314-002:Users student$ curl www.google.com
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head><meta content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." name="description"><meta content="noodp" name="robots"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title>
 
 
 ==========
@@ -105,7 +115,7 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
-
+curl -o filename.txt
 
 
 ==========
@@ -113,15 +123,14 @@ Write the command you used below.  Also copy and paste the output below.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-
-
+pwd
 
 ==========
 12. If you're not in your home directory, change to it (use the shortcut).
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+/
 
 
 ==========
@@ -137,8 +146,7 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
-
-
+curl -o mtec1002.zip http://levylorenzo.github.io/mtec1002-lab-02.zip
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
@@ -146,14 +154,14 @@ Write down the command that you used to download the file below.  Additionally, 
 Write down the command that you used to uncompress the file.
 ----------
 
-
+unzip mtec1002.zip
 
 ==========
 15. Change to the directory that was just created.  List the contents (of the directory that was extracted from the labs .zip file). 
 
 Copy and paste the output below.
 ----------
-
+_MACOSX	foureyes.txt	mtec1002-lab-02	mtec1002.zip
 
 
 ==========
@@ -164,7 +172,7 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+__MACOSX	foureyes.txt	mtec1002-lab-02	mtec1002.zip	stuff
 
 
 ==========
@@ -176,7 +184,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+foureyes.txt	mtec1002-lab-02	stuff
 
 
 ==========
@@ -188,7 +196,7 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+stuff		stuff.tar
 
 
 ==========
@@ -199,14 +207,14 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
+a stuff
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
+stuff		stuff.tar
 
 
 ==========
@@ -216,7 +224,7 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+stuff		stuff.tar.gz
 
 
 ==========
@@ -230,7 +238,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+__MACOSX	foureyes.txt	mtec1002-lab-02	mtec1002.zip	stuff
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -239,7 +247,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+tar: Error opening archive: Failed to open 'stuff.tar.gz'
 
 
 ==========
